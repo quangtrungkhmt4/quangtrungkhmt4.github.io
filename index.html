@@ -1,447 +1,417 @@
-<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
-        <meta charset="UTF-8">
-        <title>Happy Birthday</title>
-        <style>
-            /* If you can't see it just hit space in here*/
-            body {
-                font-family:'Wendy One', sans-serif;
-            }
-			
-			body {
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-  background-image: -webkit-radial-gradient(#374566, #010203);
-  background-image: -moz-radial-gradient(#374566, #010203);
-  background-image: -o-radial-gradient(#374566, #010203);
-  background-image: radial-gradient(#374566, #010203);
-}
-            span {
-                text-transform: uppercase;
-            }
-            .container {
-                width: 800px;
-                height: 420px;
-                padding: 10px;
-                margin: 0 auto;
-                position: relative;
-            }
-            .balloon {
-                width: 738px;
-                margin: 0 auto;
-                padding-top: 30px;
-                position: relative;
-            }
-            .balloon > div {
-                width: 104px;
-                height: 140px;
-                background: rgba(182, 15, 97, 0.9);
-                border-radius: 0;
-                border-radius: 80% 80% 80% 80%;
-                margin: 0 auto;
-                position: absolute;
-                padding: 10px;
-                box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
-                -webkit-transform-origin: bottom center;
-            }
-            .balloon > div:nth-child(1) {
-                background: rgba(182, 15, 97, 0.9);
-                left: 0;
-                box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
-                -webkit-animation: balloon1 6s ease-in-out infinite;
-                -moz-animation: balloon1 6s ease-in-out infinite;
-                -o-animation: balloon1 6s ease-in-out infinite;
-                animation: balloon1 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(1):before {
-                color: rgba(182, 15, 97, 0.9);
-            }
-            .balloon > div:nth-child(2) {
-                background: rgba(242, 112, 45, 0.9);
-                left: 120px;
-                box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
-                -webkit-animation: balloon2 6s ease-in-out infinite;
-                -moz-animation: balloon2 6s ease-in-out infinite;
-                -o-animation: balloon2 6s ease-in-out infinite;
-                animation: balloon2 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(2):before {
-                color: rgba(242, 112, 45, 0.9);
-            }
-            .balloon > div:nth-child(3) {
-                background: rgba(45, 181, 167, 0.9);
-                left: 240px;
-                box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
-                -webkit-animation: balloon4 6s ease-in-out infinite;
-                -moz-animation: balloon4 6s ease-in-out infinite;
-                -o-animation: balloon4 6s ease-in-out infinite;
-                animation: balloon4 6s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(3):before {
-                color: rgba(45, 181, 167, 0.9);
-            }
-            .balloon > div:nth-child(4) {
-                background: rgba(190, 61, 244, 0.9);
-                left: 360px;
-                box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
-                -webkit-animation: balloon1 5s ease-in-out infinite;
-                -moz-animation: balloon1 5s ease-in-out infinite;
-                -o-animation: balloon1 5s ease-in-out infinite;
-                animation: balloon1 5s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(4):before {
-                color: rgba(190, 61, 244, 0.9);
-            }
-            .balloon > div:nth-child(5) {
-                background: rgba(180, 224, 67, 0.9);
-                left: 480px;
-                box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
-                -webkit-animation: balloon3 5s ease-in-out infinite;
-                -moz-animation: balloon3 5s ease-in-out infinite;
-                -o-animation: balloon3 5s ease-in-out infinite;
-                animation: balloon3 5s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(5):before {
-                color: rgba(180, 224, 67, 0.9);
-            }
-            .balloon > div:nth-child(6) {
-                background: rgba(242, 194, 58, 0.9);
-                left: 600px;
-                box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
-                -webkit-animation: balloon2 3s ease-in-out infinite;
-                -moz-animation: balloon2 3s ease-in-out infinite;
-                -o-animation: balloon2 3s ease-in-out infinite;
-                animation: balloon2 3s ease-in-out infinite;
-            }
-            .balloon > div:nth-child(6):before {
-                color: rgba(242, 194, 58, 0.9);
-            }
-            .balloon > div:before {
-                color: rgba(182, 15, 97, 0.9);
-                position: absolute;
-                bottom: -11px;
-                left: 52px;
-                content:"▲";
-                font-size: 1em;
-            }
-            span {
-                font-size: 4.8em;
-                color: white;
-                position: relative;
-                top: 30px;
-                left: 50%;
-                margin-left: -27px;
-            }
-            /*BALLOON 1 4*/
-            @-webkit-keyframes balloon1 {
-                0%, 100% {
-                    -webkit-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -webkit-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @-moz-keyframes balloon1 {
-                0%, 100% {
-                    -moz-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -moz-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @-o-keyframes balloon1 {
-                0%, 100% {
-                    -o-transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    -o-transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            @keyframes balloon1 {
-                0%, 100% {
-                    transform: translateY(0) rotate(-6deg);
-                }
-                50% {
-                    transform: translateY(-20px) rotate(8deg);
-                }
-            }
-            /* BAllOON 2 5*/
-            @-webkit-keyframes balloon2 {
-                0%, 100% {
-                    -webkit-transform: translateY(0) rotate(6eg);
-                }
-                50% {
-                    -webkit-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @-moz-keyframes balloon2 {
-                0%, 100% {
-                    -moz-transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    -moz-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @-o-keyframes balloon2 {
-                0%, 100% {
-                    -o-transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    -o-transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            @keyframes balloon2 {
-                0%, 100% {
-                    transform: translateY(0) rotate(6deg);
-                }
-                50% {
-                    transform: translateY(-30px) rotate(-8deg);
-                }
-            }
-            /* BAllOON 0*/
-            @-webkit-keyframes balloon3 {
-                0%, 100% {
-                    -webkit-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -webkit-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @-moz-keyframes balloon3 {
-                0%, 100% {
-                    -moz-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -moz-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @-o-keyframes balloon3 {
-                0%, 100% {
-                    -o-transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    -o-transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            @keyframes balloon3 {
-                0%, 100% {
-                    transform: translate(0, -10px) rotate(6eg);
-                }
-                50% {
-                    transform: translate(-20px, 30px) rotate(-8deg);
-                }
-            }
-            /* BAllOON 3*/
-            @-webkit-keyframes balloon4 {
-                0%, 100% {
-                    -webkit-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -webkit-transform: translate(-15px, 20px) rotate(10deg);
-                }
-            }
-            @-moz-keyframes balloon4 {
-                0%, 100% {
-                    -moz-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -moz-transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            @-o-keyframes balloon4 {
-                0%, 100% {
-                    -o-transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    -o-transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            @keyframes balloon4 {
-                0%, 100% {
-                    transform: translate(10px, -10px) rotate(-8eg);
-                }
-                50% {
-                    transform: translate(-15px, 10px) rotate(10deg);
-                }
-            }
-            h1 {
-                position: relative;
-                top: 200px;
-                text-align: center;
-                color: white;
-                font-size: 3.5em;
-            }
-        </style>
-        <script>
-            window.open = function() {};
-            window.print = function() {};
-            // Support hover state for mobile.
-            if (false) {
-                window.ontouchstart = function() {};
-            }
-        </script>
-
-
-        <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-        <meta content="clickberry-extension-here">
-        <meta content="clickberry-extension-here">
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-    <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Andrea - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <body  style="background: #43285f;">
-        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-        <div>
-        	<img src="top1.jpg" width="100%">
-        </div>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-        <div>
-        	<img src="top2.jpg" width="20%" style="float: left;">
-        	<img src="top3.jpg" width="20%" style="float: right;">
-        </div>
+    <link rel="stylesheet" href="css/aos.css">
 
-        <div class="balloon">
-        	<div><span>&#10084;</span>
-            </div>
-            <div><span>M</span>
-            </div>
-            <div><span>I</span>
-            </div>
-            <div><span>N</span>
-            </div>
-            <div><span>H</span>
-            </div>
-            <div><span>&#10084;</span>
-            </div>
-        </div>
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
-        <div class="balloon" style="margin-top: 140px;">
-        	<div><span>&#10084;</span>
-            </div>
-            <div><span>N</span>
-            </div>
-            <div><span>G</span>
-            </div>
-            <div><span>Ọ</span>
-            </div>
-            <div><span>C</span>
-            </div>
-            <div><span>&#10084;</span>
-            </div>
-        </div>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-        <div>
-        	<h1>24/03/1997 - 24/03/2020</h1>
-        </div>
-        
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-        <div class="container">
-            <div class="balloon" style="margin-top: 150px;">
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span>C</span>
-                </div>
-                <div><span>H</span>
-                </div>
-                <div><span>Ú</span>
-                </div>
-                <div><span>C</span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li class="colorlib-active"><a href="index.html">Home</a></li>
+					<li><a href="fashion.html">Fashion</a></li>
+					<li><a href="travel.html">Travel</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<h1 id="colorlib-logo" class="mb-4"><a href="index.html" style="background-image: url(images/bg_1.jpg);">Andrea <span>Moore</span></a></h1>
+				<div class="mb-4">
+					<h3>Subscribe for newsletter</h3>
+					<form action="#" class="colorlib-subscribe-form">
+            <div class="form-group d-flex">
+            	<div class="icon"><span class="icon-paper-plane"></span></div>
+              <input type="text" class="form-control" placeholder="Enter Email Address">
             </div>
-            <div class="balloon" style="margin-top: 100px;">
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span>M</span>
-                </div>
-                <div><span>Ừ</span>
-                </div>
-                <div><span>N</span>
-                </div>
-                <div><span>G</span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-            </div>
-            <div class="balloon" style="margin-top: 100px;">
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span>S</span>
-                </div>
-                <div><span>I</span>
-                </div>
-                <div><span>N</span>
-                </div>
-                <div><span>H</span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-            </div>
-            <div class="balloon" style="margin-top: 100px;">
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span>N</span>
-                </div>
-                <div><span>H</span>
-                </div>
-                <div><span>Ậ</span>
-                </div>
-                <div><span>T</span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-            </div>
+          </form>
+				</div>
+				<p class="pfooter"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</aside> <!-- END COLORLIB-ASIDE -->
+		<div id="colorlib-main">
+			<section class="ftco-section ftco-no-pt ftco-no-pb">
+	    	<div class="container">
+	    		<div class="row d-flex">
+	    			<div class="col-xl-8 py-5 px-md-5">
+	    				<div class="row pt-md-4">
+			    			<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_1.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">A Loving Heart is the Truest Wisdom</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_2.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">Great Things Never Came from Comfort Zone</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_3.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">Paths Are Made by Walking</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Lifestyle</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_4.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">The Secret of Getting Ahead is Getting Started</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Nature</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_5.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Lifestyle</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_6.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Travel</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_7.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Travel</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_8.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_9.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_10.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span>Dec 14, 2018</span>
+				              		<span><a href="single.html">Lifestyle</a></span>
+				              		<span>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_11.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="blog-entry ftco-animate d-md-flex">
+										<a href="single.html" class="img img-2" style="background-image: url(images/image_12.jpg);"></a>
+										<div class="text text-2 pl-md-4">
+				              <h3 class="mb-2"><a href="single.html">You Can't Blame Gravity for Falling in Love</a></h3>
+				              <div class="meta-wrap">
+												<p class="meta">
+				              		<span><i class="icon-calendar mr-2"></i>June 28, 2019</span>
+				              		<span><a href="single.html"><i class="icon-folder-o mr-2"></i>Travel</a></span>
+				              		<span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+				              	</p>
+			              	</div>
+				              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+				              <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+				            </div>
+									</div>
+								</div>
+			    		</div><!-- END-->
+			    		<div class="row">
+			          <div class="col">
+			            <div class="block-27">
+			              <ul>
+			                <li><a href="#">&lt;</a></li>
+			                <li class="active"><span>1</span></li>
+			                <li><a href="#">2</a></li>
+			                <li><a href="#">3</a></li>
+			                <li><a href="#">4</a></li>
+			                <li><a href="#">5</a></li>
+			                <li><a href="#">&gt;</a></li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+			    	</div>
+	    			<div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
+	            <div class="sidebar-box pt-md-4">
+	              <form action="#" class="search-form">
+	                <div class="form-group">
+	                  <span class="icon icon-search"></span>
+	                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+	                </div>
+	              </form>
+	            </div>
+	            <div class="sidebar-box ftco-animate">
+	            	<h3 class="sidebar-heading">Categories</h3>
+	              <ul class="categories">
+	                <li><a href="#">Fashion <span>(6)</span></a></li>
+	                <li><a href="#">Technology <span>(8)</span></a></li>
+	                <li><a href="#">Travel <span>(2)</span></a></li>
+	                <li><a href="#">Food <span>(2)</span></a></li>
+	                <li><a href="#">Photography <span>(7)</span></a></li>
+	              </ul>
+	            </div>
 
-            <div class="balloon" style="margin-top: 100px;">
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span>E</span>
-                </div>
-                <div><span>M</span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-                <div><span><img src="congratulation.png"></span>
-                </div>
-            </div>
+	            <div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Popular Articles</h3>
+	              <div class="block-21 mb-4 d-flex">
+	                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+	                <div class="text">
+	                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control</a></h3>
+	                  <div class="meta">
+	                    <div><a href="#"><span class="icon-calendar"></span> June 28, 2019</a></div>
+	                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
+	                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="block-21 mb-4 d-flex">
+	                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+	                <div class="text">
+	                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control</a></h3>
+	                  <div class="meta">
+	                    <div><a href="#"><span class="icon-calendar"></span> June 28, 2019</a></div>
+	                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
+	                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+	                  </div>
+	                </div>
+	              </div>
+	              <div class="block-21 mb-4 d-flex">
+	                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+	                <div class="text">
+	                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control</a></h3>
+	                  <div class="meta">
+	                    <div><a href="#"><span class="icon-calendar"></span> June 28, 2019</a></div>
+	                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
+	                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
 
-             <h1>Chúc em thêm tuổi mới sẽ có thêm được nhiều điều tốt đẹp mới đến với bản thân trong công việc lẫn cuộc sống. Chúc em ngày càng xinh đẹp này, giỏi giang hơn này, trưởng thành chín chắn hơn này và tất nhiên càng yêu anh hơn này &#10084;</h1>
+	            <div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Tag Cloud</h3>
+	              <ul class="tagcloud">
+	                <a href="#" class="tag-cloud-link">animals</a>
+	                <a href="#" class="tag-cloud-link">human</a>
+	                <a href="#" class="tag-cloud-link">people</a>
+	                <a href="#" class="tag-cloud-link">cat</a>
+	                <a href="#" class="tag-cloud-link">dog</a>
+	                <a href="#" class="tag-cloud-link">nature</a>
+	                <a href="#" class="tag-cloud-link">leaves</a>
+	                <a href="#" class="tag-cloud-link">food</a>
+	              </ul>
+	            </div>
 
-             <h2 style="float: right; color: #ffffff; margin-top: 200px;">BenjaminLe</h2>
+							<div class="sidebar-box subs-wrap img py-4" style="background-image: url(images/bg_1.jpg);">
+								<div class="overlay"></div>
+								<h3 class="mb-4 sidebar-heading">Newsletter</h3>
+								<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia</p>
+	              <form action="#" class="subscribe-form">
+	                <div class="form-group">
+	                  <input type="text" class="form-control" placeholder="Email Address">
+	                  <input type="submit" value="Subscribe" class="mt-2 btn btn-white submit">
+	                </div>
+	              </form>
+	            </div>
 
-            <audio src="audio.mp3" id="my_audio" loop="loop" muted="muted"></audio>
-              <script type="text/javascript">
-                // window.onload=function(){
-                let audio = document.getElementById("my_audio");
-
-                audio.oncanplaythrough = (event) => {
-                var playedPromise = audio.play();
-                if (playedPromise) {
-                    playedPromise.catch((e) => {
-                        console.log(e)
-                        if (e.name === 'NotAllowedError' || e.name === 'NotSupportedError') {
-                            console.log(e.name);
-                        }
-                    }).then(() => {
-
-                    });
-                }
-            }
-                // }
-              </script>
-
-        </div>
-        <script>
-            
-        </script>
-        <script>
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage('resize', "*");
-            }
-        </script>
+	            <div class="sidebar-box ftco-animate">
+	            	<h3 class="sidebar-heading">Archives</h3>
+	              <ul class="categories">
+	              	<li><a href="#">Decob14 2018 <span>(10)</span></a></li>
+	                <li><a href="#">September 2018 <span>(6)</span></a></li>
+	                <li><a href="#">August 2018 <span>(8)</span></a></li>
+	                <li><a href="#">July 2018 <span>(2)</span></a></li>
+	                <li><a href="#">June 2018 <span>(7)</span></a></li>
+	                <li><a href="#">May 2018 <span>(5)</span></a></li>
+	              </ul>
+	            </div>
 
 
-</body></html>
+	            <div class="sidebar-box ftco-animate">
+	              <h3 class="sidebar-heading">Paragraph</h3>
+	              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut.</p>
+	            </div>
+	          </div><!-- END COL -->
+	    		</div>
+	    	</div>
+	    </section>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
